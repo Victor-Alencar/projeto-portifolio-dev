@@ -137,6 +137,55 @@ body {
     display: flex;
     gap: 20px;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon-btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transition-speed), background-color var(--transition-speed);
+    flex-shrink: 0;
+}
+
+.social-icon-btn img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
+
+.social-icon-btn:hover {
+    transform: translateY(-5px);
+    background-color: var(--hover-color);
+}
+
+.tech-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.tech-icon-item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.tech-icon-item img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
 }
 
 .social-links a {
@@ -297,7 +346,6 @@ body {
     color: var(--text-color);
 }
 
-/* Contact Section */
 #contact {
     background-color: #262527;
 }
@@ -350,7 +398,10 @@ body {
     color: var(--primary-color);
 }
 
-/* Footer */
+.contact-item .github-icon {
+    filter: invert(100%);
+}
+
 .footer {
     background-color: #1a1a1a;
     color: #bbb;
